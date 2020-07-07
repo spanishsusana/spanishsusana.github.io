@@ -1,10 +1,4 @@
-/*
 
-The Town
-
-https://templatemo.com/tm-525-the-town
-
-*/
 
 html {
   font-size: 18px;
@@ -38,7 +32,7 @@ a:focus {
 }
 
 .tm-section-pad-top {
-  padding-top: 135px;
+  padding-top: 55px;
 }
 
 .tm-text-primary {
@@ -132,8 +126,11 @@ a:focus {
 /* Hero */
 
 #hero {
-  background-image: url(../img/the-town-bg-01.jpg);
-  background-repeat: no-repeat;
+  background: url(../img/madrid-main2.jpg) no-repeat center center fixed;
+  -webkit-background-size:  100vw 150vh;
+  -moz-background-size:  100vw 150vh;
+  -o-background-size:  100vw 150vh;
+  background-size:  100vw 150vh;
   height: 100vh;
   min-height: 375px;
   position: relative;
@@ -416,12 +413,13 @@ figure.effect-honey:hover h2 i {
 
 #contact {
   color: white;
-  background-image: url(../img/the-town-bg-02.jpg);
+  background-image: url(../img/madrid-main.jpg);
+  background-size:  100vw 140vh;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 850px;
+  min-height: 650px;
   position: relative;
-  padding-bottom: 50px;
+  /* padding-bottom: 50px; */
   padding-top: 160px;
 }
 
@@ -507,14 +505,23 @@ p {
   line-height: 1.9;
 }
 
+#intro-img{
+  max-width: 300px;
+  max-height: 400px;
+}
+
+#profile{
+  margin-top: 30px;
+}
+
 @media (min-width: 768px) {
   .tm-intro-text-container {
     padding-left: 65px;
   }
 
   .navbar-expand-md .navbar-nav .nav-link {
-    padding-right: 30px;
-    padding-left: 30px;
+    padding-right: 20px;
+    padding-left: 20px;
   }
 }
 
