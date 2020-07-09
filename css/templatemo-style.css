@@ -1,4 +1,12 @@
 
+.gallery-img {
+  object-fit: cover;
+  object-position: 100% 0;
+
+  width: 300px;
+  height: 300px;
+}
+
 
 html {
   font-size: 18px;
@@ -126,7 +134,7 @@ a:focus {
 /* Hero */
 
 #hero {
-  background: url(../img/madrid-main2.jpg) no-repeat center center fixed;
+  background: url(../img/granada.jpg) no-repeat center center fixed;
   -webkit-background-size:  100vw 150vh;
   -moz-background-size:  100vw 150vh;
   -o-background-size:  100vw 150vh;
@@ -135,6 +143,7 @@ a:focus {
   min-height: 375px;
   position: relative;
 }
+
 
 @media (min-height: 830px) {
   #hero {
@@ -413,7 +422,7 @@ figure.effect-honey:hover h2 i {
 
 #contact {
   color: white;
-  background-image: url(../img/madrid-main.jpg);
+  background-image: url(../img/granada.jpg);
   background-size:  100vw 140vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -514,6 +523,19 @@ p {
   margin-top: 30px;
 }
 
+#main{
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 10px 25px;
+  background: aliceblue;
+}
+
+#about-me{
+  display: grid;
+  grid-template-rows: auto;
+  row-gap: 50px;
+}
+
 @media (min-width: 768px) {
   .tm-intro-text-container {
     padding-left: 65px;
@@ -523,7 +545,14 @@ p {
     padding-right: 20px;
     padding-left: 20px;
   }
+  #about-me{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 30px;
+  }
 }
+
+
 
 @media (min-width: 1200px) {
   .container {
@@ -580,6 +609,14 @@ p {
   .navbar-collapse .nav-link {
     color: #8f8f8f;
   }
+
+  .tm-footer {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    padding: 0 15px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -596,6 +633,10 @@ p {
   .tm-gallery-item {
     margin: 0;
   }
+
+  #main{
+    background: none;
+  }
 }
 
 @media (max-width: 420px) {
@@ -603,5 +644,19 @@ p {
     display: block;
     margin-left: 0;
     margin-top: 20px;
+  }
+
+  #main{
+    width: calc(100% - 70px);
+    min-width: 340px;
+  }
+}
+
+@media (max-width: 1000px) {
+  #hero {
+      background-size: 1000px 1000px; /* Force the image to its minimum width */
+  }
+  #contact{
+    background-size: 1000px 1000px; /* Force the image to its minimum width */
   }
 }
